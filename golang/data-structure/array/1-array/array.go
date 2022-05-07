@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func RemoveIndex(s []string, index int) []string {
 	fmt.Println("e", s[:index])
@@ -16,12 +19,14 @@ func LoopingArr(data []string) {
 }
 
 // Find Position Element
-func Find(data []string, x string) {
+func Find(data []string, x string) (int, error) {
 	for i, res := range data {
 		if res == x {
-			fmt.Println("s", i)
+			// fmt.Println("s", i)
+			return i, nil
 		}
 	}
+	return 0, errors.New("not found")
 }
 
 // Mengecek apakah di dalam array terdapat nilai x.
