@@ -32,6 +32,5 @@ func main() {
 	responseData := make(map[string]string)
 	responseData["Title"] = idc.Title
 
-	Data.movies.Title[]
 	fmt.Println(responseData["Title"])
 }

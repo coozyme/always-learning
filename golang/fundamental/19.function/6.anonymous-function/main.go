@@ -16,8 +16,14 @@ func main() {
 		return name == "admin"
 	}
 
+	square := func(name string) string {
+		return "hello " + name
+	}("doni")
+
 	registerUser("admin", blackList)
 	registerUser("agung", func(s string) bool {
 		return s == "agung"
 	})
+
+	fmt.Println(square)
 }
