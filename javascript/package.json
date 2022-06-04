@@ -1,0 +1,17 @@
+{
+  "name": "learning-javascript",
+  "version": "1.0.0",
+  "description": "allways-learning-javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest "
+  },
+  "keywords": [
+    "allways-learning"
+  ],
+  "author": "coozyme",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.0"
+  }
+}
