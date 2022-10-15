@@ -4,7 +4,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	jsonencode "golang/try-on/J"
+	jsonencode "always-learning/golang/try-code/JSON-encode-array-nested"
 )
 
 var _ = Describe("JSON Encode", func() {

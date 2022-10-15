@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"allways-learning/golang/programme/solid-principle/OpenClosedPrinciple"
+	"always-learning/golang/programme/solid-principle/OpenClosedPrinciple"
 )
 
 func main() {

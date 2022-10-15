@@ -1,13 +1,13 @@
 {
   "name": "learning-javascript",
   "version": "1.0.0",
-  "description": "allways-learning-javascript",
+  "description": "always-learning-javascript",
   "main": "index.js",
   "scripts": {
     "test": "jest "
   },
   "keywords": [
-    "allways-learning"
+    "always-learning"
   ],
   "author": "coozyme",
   "license": "ISC",

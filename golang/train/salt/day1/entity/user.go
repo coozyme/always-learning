@@ -1,6 +1,6 @@
 package entity
 
-import "allways-learning/golang/train/salt/day1/valueobject"
+import "always-learning/golang/train/salt/day1/valueobject"
 
 type User struct {
 	Name     *valueobject.Name

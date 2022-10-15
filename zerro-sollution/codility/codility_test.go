@@ -3,7 +3,7 @@ package codility_test
 import (
 	"testing"
 
-	code "allways-learning/zerro-sollution/codility"
+	code "always-learning/zerro-sollution/codility"
 
 	"github.com/stretchr/testify/assert"
 )

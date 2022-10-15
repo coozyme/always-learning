@@ -1,8 +1,8 @@
 package main
 
 import (
-	"allways-learning/golang/train/salt/day1/entity"
-	"allways-learning/golang/train/salt/day1/valueobject"
+	"always-learning/golang/train/salt/day1/entity"
+	"always-learning/golang/train/salt/day1/valueobject"
 	"fmt"
 )
 

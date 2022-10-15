@@ -1,7 +1,7 @@
 package OpenClosedPrinciple
 
 import (
-	"allways-learning/golang/programme/solid-principle/OpenClosedPrinciple/after"
+	"always-learning/golang/programme/solid-principle/OpenClosedPrinciple/after"
 	"fmt"
 )
 

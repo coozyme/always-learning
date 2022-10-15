@@ -1,1 +1,1 @@
-# allways-learning
+# always-learning
