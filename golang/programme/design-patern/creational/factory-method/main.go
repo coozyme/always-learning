@@ -1,7 +1,7 @@
 package main
 
 import (
-	"always-learning/golang/programme/design-patern/creational-patern/factory-method/arms"
+	"always-learning/golang/programme/design-patern/creational/factory-method/arms"
 	"fmt"
 )
 
