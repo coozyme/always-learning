@@ -68,20 +68,6 @@ func (r *rabbitmq) Run() (err error) {
 
 func (r *rabbitmq) Publish(exchange, exchangeType, routingKey string, body string) error {
 
-	// This function dials, connects, declares, publishes, and tears down,
-	// all in one go. In a real service, you probably want to maintain a
-	// long-lived connection as state, and publish against that.
-
-	// log.Printf("dialing %q", amqpURI)
-
-	// connection, err := amqp.Dial(amqpURI)
-	// if err != nil {
-	// return fmt.Errorf("Dial: %s", err)
-	// }
-	// defer connection.Close()
-
-	// Create an exchange
-	// Create an exchange
 	log.Printf("got Channel, declaring %q Exchange (%q)", exchangeType, exchange)
 	if err := r.Channel.ExchangeDeclare(
 		exchange,     // name
@@ -144,7 +130,7 @@ func (r *rabbitmq) Listen() error {
 	for _, e := range r.events {
 
 		queue, err := r.Channel.QueueDeclare(
-			"queueName",                      // name of the queue
+			e.Exchange(),                     // name of the queue
 			true,                             // durable
 			false,                            // delete when unused
 			false,                            // exclusive
