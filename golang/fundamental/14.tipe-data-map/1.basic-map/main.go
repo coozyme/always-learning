@@ -35,6 +35,7 @@ func main() {
 	book["author"] = "Ary"
 	book["upss"] = "Salah"
 
+	fmt.Println("Len book", len(book))
 	fmt.Println(book, len(book)) //output: map[author:Ary title:Buku Go-Lang upss:Salah]
 	delete(book, "upss")
 	fmt.Println(book, len(book)) //output: map[author:Ary title:Buku Go-Lang]
