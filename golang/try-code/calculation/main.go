@@ -23,9 +23,9 @@ func Percent(x, y float64) float64 {
 	// log.Println("to FLoat", float64(it))
 	log.Println("LOG-P", f)
 	// fmt.Printf("%.3f \n", p)
-	round := math.Ceil(f)
-	log.Println("LOG-round", round)
-	return round
+	// round := math.Ceil(f)
+	// log.Println("LOG-round", round)
+	return f
 }
 
 func RoundToEven(x float64, y float64) float64 {
@@ -45,9 +45,9 @@ func Ins(value, insuranceFee float64) float64 {
 
 // func NewFromFloat(value float64) Decimal
 func main() {
-	var price float64 = 789000
-	ins := 0.20 / 100
+	var price float64 = 1169000
+	ins := 0.2 / 100
 	// fmt.Println(Ins(price, 0.02))
-	// fmt.Println(Percent(price, ins))
+	fmt.Println("OKK", Percent(price, ins))
 	fmt.Println(RoundToEven(price, ins))
 }
